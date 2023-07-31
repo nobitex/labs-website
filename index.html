@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
     <script src="https://cdn.jsdelivr.net/npm/showdown@<version tag>/dist/showdown.min.js" type="script/javascript"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
   </head>
   <body class="bootstra-enable-cursor lh-base">
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -22,7 +28,7 @@
         
           @media (min-width: 1300px) {
             .nobitex-labs {
-            font-size: 1.3em;
+            font-size: 1.2em;
             }
           }
           @media (max-width: 1px) {
@@ -32,17 +38,17 @@
 
           }
         </style>
+                                            
+                                                                                                   
+
+███╗   ██╗ ██████╗ ██████╗ ██╗████████╗███████╗██╗  ██╗    ██╗      █████╗ ██████╗ ███████╗
+████╗  ██║██╔═══██╗██╔══██╗██║╚══██╔══╝██╔════╝╚██╗██╔╝    ██║     ██╔══██╗██╔══██╗██╔════╝
+██╔██╗ ██║██║   ██║██████╔╝██║   ██║   █████╗   ╚███╔╝     ██║     ███████║██████╔╝███████╗
+██║╚██╗██║██║   ██║██╔══██╗██║   ██║   ██╔══╝   ██╔██╗     ██║     ██╔══██║██╔══██╗╚════██║
+██║ ╚████║╚██████╔╝██████╔╝██║   ██║   ███████╗██╔╝ ██╗    ███████╗██║  ██║██████╔╝███████║
+╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝    ╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝
 
 
- __    __            __        __    __                                __                 __                 
-|  \  |  \          |  \      |  \  |  \                              |  \               |  \                
-| $$\ | $$  ______  | $$____   \$$ _| $$_     ______   __    __       | $$       ______  | $$____    _______ 
-| $$$\| $$ /      \ | $$    \ |  \|   $$ \   /      \ |  \  /  \      | $$      |      \ | $$    \  /       \
-| $$$$\ $$|  $$$$$$\| $$$$$$$\| $$ \$$$$$$  |  $$$$$$\ \$$\/  $$      | $$       \$$$$$$\| $$$$$$$\|  $$$$$$$
-| $$\$$ $$| $$  | $$| $$  | $$| $$  | $$ __ | $$    $$  >$$  $$       | $$      /      $$| $$  | $$ \$$    \ 
-| $$ \$$$$| $$__/ $$| $$__/ $$| $$  | $$|  \| $$$$$$$$ /  $$$$\       | $$_____|  $$$$$$$| $$__/ $$ _\$$$$$$\
-| $$  \$$$ \$$    $$| $$    $$| $$   \$$  $$ \$$     \|  $$ \$$\      | $$     \\$$    $$| $$    $$|       $$
- \$$   \$$  \$$$$$$  \$$$$$$$  \$$    \$$$$   \$$$$$$$ \$$   \$$       \$$$$$$$$ \$$$$$$$ \$$$$$$$  \$$$$$$$ 
 
       </h6>
     </div>
@@ -63,6 +69,10 @@
                 <p>Nobitex Labs is a place where Satoshi's dream will come true!</p>
                 <p class="lead text-center">
                   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#joinModal">I want to join!</button>
+                </p>
+
+                <p class="lead text-center">
+                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#postModal">KZG Commitments</button>
                 </p>
               </div>
             </div>
@@ -168,6 +178,25 @@
       </div>
     </div>
 
+    <div tabindex="-1" class="modal fade" id="postModal">
+      <div class="modal-dialog modal-dialog-centered" style="margin: 0 auto; margin-top: 5vh; min-width: 70vw;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="modalTitle"></div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">x</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modalContent">
+            
+          </div>
+          <div class="modal-footer">
+            <a href="mailto:labs@nobitex.ir" type="button" class="btn btn-primary">I'm in!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
 
     <div class="container-fluid">
@@ -212,13 +241,17 @@
   client.onreadystatechange = function() {
     var converter = new showdown.Converter(),
     html = converter.makeHtml(client.responseText);
-    $('#post-content').html(html);
+    $('#modalContent').html(html);
   }
   client.send();
 
-
-  
-
 })();
   </script><div class="bootstra-cursor" style="left: 336px; top: 504px;"></div>
+   <style>
+    em::before, em::after, strong::before, strong::after {
+      font-weight: bolder;
+      font-size: 1.2em !important;
+      content: none;
+    }
+  </style>
 </body></html>
