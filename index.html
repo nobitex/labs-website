@@ -138,15 +138,7 @@
           </div>
           <div class="col-lg-6">
             <div class="bs-component">
-              <div class="list-group">
-                <a type="button" data-toggle="modal" data-target="#postModal" class="list-group-item list-group-item-action flex-column align-items-start active">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">KZG Polynomial Commitments</h5>
-                    <small style="font-size: 0.7em;">19 Jul 2023</small>
-                  </div>
-                  <p class="mb-1">A write-up on how pairing-based polynomial commitments work</p>
-                </a>
-                
+              <div class="list-group" id="postList">
               </div>
             </div>
           </div>
@@ -182,20 +174,8 @@
       </div>
     </div>
 
-    <div tabindex="-1" class="modal fade" id="postModal">
-      <div class="modal-dialog modal-dialog-centered" style="margin: 0 auto; margin-top: 5vh; margin-bottom: 5vh; min-width: 70vw;">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" id="modalTitle"></div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">x</span>
-            </button>
-          </div>
-          <div class="modal-body" id="modalContent">
-            
-          </div>
-        </div>
-      </div>
+    <div id="modals">
+      
     </div>
 
     </div>
@@ -229,15 +209,52 @@
     e.preventDefault();
   });
 
-  var client = new XMLHttpRequest();
-  client.open('GET', '/content/kzg.md');
-  client.onreadystatechange = function() {
-    var converter = new showdown.Converter(),
-    html = converter.makeHtml(client.responseText);
-    $('#modalContent').html(html);
-  }
-  client.send();
+  let posts = [
+    {id: 'stealth', date: "25 Jul 2023", title: "Stealth Addresses", desc: "Understanding Stealth Addresses and how they can be implemented on Ethereum", markdown: 'content/stealth.md'},
+    {id: 'kzg', date: "19 Jul 2023", title: "KZG Polynomial Commitments", desc: "A write-up on how pairing-based polynomial commitments work", markdown: 'content/kzg.md'}
+  ];
 
+  for(i in posts) {
+    var client = new XMLHttpRequest();
+    client.open('GET', posts[i].markdown);
+    let listItemObj = $(`<a type="button" data-toggle="modal" data-target="#${posts[i].id}" class="list-group-item list-group-item-action flex-column align-items-start active">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">${posts[i].title}</h5>
+          <small style="font-size: 0.7em;">${posts[i].date}</small>
+        </div>
+        <p class="mb-1">${posts[i].desc}</p>
+      </a>`
+    );
+    let modalObj = $(`
+          <div tabindex="-1" class="modal fade" id="${posts[i].id}">
+            <div class="modal-dialog modal-dialog-centered" style="margin: 0 auto; margin-top: 5vh; margin-bottom: 5vh; min-width: 70vw;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-title"></div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="${posts[i].id}Content">
+                  
+                </div>
+              </div>
+            </div>
+          </div>`);
+    $('#modals').append(modalObj);
+    $('#postList').append(listItemObj);
+    client.onreadystatechange = (function(client, id) { return function() {
+      
+      if (client.readyState === 4 && client.status === 200) {
+        console.log(id);
+        var converter = new showdown.Converter();
+        html = converter.makeHtml(client.responseText);
+        $(id).html(html);
+      }
+    };}(client, `#${posts[i].id}Content`));
+    client.send();
+  }
+  
 })();
   </script>
   <script type="text/x-mathjax-config">
