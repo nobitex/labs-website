@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <script src="https://cdn.jsdelivr.net/npm/showdown@<version tag>/dist/showdown.min.js" type="script/javascript"></script>
   </head>
   <body class="bootstra-enable-cursor lh-base">
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -19,12 +20,12 @@
       <h6 class="font-weight-bold text-white nobitex-labs" style="overflow: hidden;white-space-collapse: discard; white-space: pre-wrap;">
         <style>  
         
-          @media (min-width: 1400px) {
+          @media (min-width: 1300px) {
             .nobitex-labs {
             font-size: 1.3em;
             }
           }
-          @media (max-width: 1400px) {
+          @media (max-width: 1px) {
             .nobitex-labs {
               font-size: 1em;
             }  
@@ -179,10 +180,14 @@
       </footer>
     </div>
 
+    <div id="post-content"></div>
+
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
 
+    
 <script>
 (function(){
   _386.magicCursor();
@@ -201,6 +206,18 @@
   $("a[href='#']").click(function(e) {
     e.preventDefault();
   });
+
+  var client = new XMLHttpRequest();
+  client.open('GET', '/content/kzg.md');
+  client.onreadystatechange = function() {
+    var converter = new showdown.Converter(),
+    html = converter.makeHtml(client.responseText);
+    $('#post-content').html(html);
+  }
+  client.send();
+
+
+  
 
 })();
   </script><div class="bootstra-cursor" style="left: 336px; top: 504px;"></div>
