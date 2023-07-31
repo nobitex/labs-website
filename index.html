@@ -21,8 +21,8 @@
       </div>
     </div>
 
-    <div class="row" style="width: 100%; margin: 0 auto;">
-      <div class="text-center d-none d-xl-block" style="margin: 3em auto; position: relative; left: -1em;">
+    <div class="row" style="width: 100%; margin: 0 auto; height: 100vh;">
+      <div class="text-center" style="margin: 3em auto; position: relative; left: -1em;">
       <h6 class="font-weight-bold text-white nobitex-labs" style="overflow: hidden;white-space-collapse: discard; white-space: pre-wrap;">
         <style>  
         
@@ -31,11 +31,20 @@
             font-size: 1.2em;
             }
           }
-          @media (max-width: 1px) {
+          @media (max-width: 1100px) {
             .nobitex-labs {
               font-size: 1em;
-            }  
-
+            }
+          }
+          @media (max-width: 1000px) {
+            .nobitex-labs {
+              font-size: 0.8em;
+            }
+          }
+          @media (max-width: 900px) {
+            .nobitex-labs {
+              display: none;
+            }
           }
         </style>
                                             
@@ -51,35 +60,30 @@
 
 
       </h6>
-    </div>
+      </div>
+      <div class="col-lg-8" style="margin: 0 auto;">
+        <div class="page-header text-center">
+          <h1>Intro</h1>
+        </div>
+        <div class="bs-component">
+          <div class="jumbotron">
+            <p class="lead">Nobitex Labs is a group of researchers and builders uniting to experiment and create new applications of cryptographic systems. We design protocols and build software that solve open problems of the blockchain technology.
+            </p>
+            <hr class="my-4">
+            <p>Nobitex Labs is a place where Satoshi's dream will come true!</p>
+            <p class="lead text-center">
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#joinModal">I want to join!</button>
+            </p>
+
+            <p class="lead text-center">
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#postModal">KZG Commitments</button>
+            </p>
+          </div>
+        </div>
     </div>
 
     <div class="container" style="background:url('dist/fonts/grid.svg'); line-height: 22px">
-      <div class="bs-docs-section clearfix">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-header text-center">
-              <h1>Intro</h1>
-            </div>
-            <div class="bs-component">
-              <div class="jumbotron">
-                <p class="lead">Nobitex Labs is a group of researchers and builders uniting to experiment and create new applications of cryptographic systems. We design protocols and build software that solve open problems of the blockchain technology.
-                </p>
-                <hr class="my-4">
-                <p>Nobitex Labs is a place where Satoshi's dream will come true!</p>
-                <p class="lead text-center">
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#joinModal">I want to join!</button>
-                </p>
-
-                <p class="lead text-center">
-                  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#postModal">KZG Commitments</button>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1>Research Topics</h1>
@@ -92,7 +96,6 @@
               <div class="card text-white mb-3">
                 <div class="card-header text-center bg-success">Scalability</div>
                 <div class="card-body">
-                  <h4 class="card-title">Primary card title</h4>
                   <p class="card-text">We care about building systems that do not break on high loads. We achieve this by applying various cryptographic protocols and tools including Zero-Knowledge Proofs, </p>
                 </div>
               </div>
@@ -103,7 +106,6 @@
               <div class="card text-white mb-3">
                 <div class="card-header text-center bg-danger">Privacy</div>
                 <div class="card-body">
-                  <h4 class="card-title">Primary card title</h4>
                   <p class="card-text">We care about people's privacy. We always seek solutions that need minimal amount of data gathered from users, giving them maximal confidentiality.</p>
                 </div>
               </div>
@@ -114,47 +116,19 @@
             <div class="card text-white  mb-3">
               <div class="card-header text-center bg-warning">Decentralization</div>
               <div class="card-body">
-                <h4 class="card-title">Where S</h4>
                 <p class="card-text">We care about balanced distribution of power. We believe true privacy and transaction freedom comes from true decentralization.</p>
               </div>
             </div>
           </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12">
-          <div class="page-header text-center">
-            <h1 id="tables">Team</h1>
-          </div>
-
-          <div class="bs-component text-center">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Position</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-success">
-                    <th scope="row">Keyvan</th>
-                    <td>Software Engineer</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">Alice</th>
-                    <td>Software Engineer</td>
-                </tr>
-                <tr class="table-warning">
-                    <th scope="row">Bob</th>
-                    <td>Software Engineer</td>
-                </tr>
-                <tr class="table-active">
-                    <th scope="row">Bob</th>
-                    <td>Software Engineer</td>
-                </tr>
-            </tbody>
-            </table>
+        <div class="container-fluid">
+          <hr>
+          <footer>
+            <p>© 2023 Nobitex
+              — Designed with BOOTSTRA.386 theme by
+              <a href="https://github.com/kristopolous" target="_blank">Chris McKenzie</a>
+            </p>
+          </footer>
         </div>
     </div>
     
@@ -199,15 +173,7 @@
 
     </div>
 
-    <div class="container-fluid">
-      <hr>
-      <footer>
-        <p>© 2023 Nobitex
-          — Designed with BOOTSTRA.386 theme by
-          <a href="https://github.com/kristopolous" target="_blank">Chris McKenzie</a>
-        </p>
-      </footer>
-    </div>
+   
 
     <div id="post-content"></div>
 
