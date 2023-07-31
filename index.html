@@ -11,8 +11,13 @@
       MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
     <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    <style>
+      * {
+        line-height: 1.1em;
+      }
+    </style>
   </head>
   <body class="bootstra-enable-cursor lh-base">
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -153,7 +158,7 @@
     </div>
 
     <div tabindex="-1" class="modal fade" id="postModal">
-      <div class="modal-dialog modal-dialog-centered" style="margin: 0 auto; margin-top: 5vh; min-width: 70vw;">
+      <div class="modal-dialog modal-dialog-centered" style="margin: 0 auto; margin-top: 5vh; margin-bottom: 5vh; min-width: 70vw;">
         <div class="modal-content">
           <div class="modal-header">
             <div class="modal-title" id="modalTitle"></div>
@@ -163,9 +168,6 @@
           </div>
           <div class="modal-body" id="modalContent">
             
-          </div>
-          <div class="modal-footer">
-            <a href="mailto:labs@nobitex.ir" type="button" class="btn btn-primary">I'm in!</a>
           </div>
         </div>
       </div>
@@ -212,7 +214,7 @@
   client.send();
 
 })();
-  </script><div class="bootstra-cursor" style="left: 336px; top: 504px;"></div>
+  </script>
    <style>
     em::before, em::after, strong::before, strong::after {
       font-weight: bolder;
