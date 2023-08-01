@@ -244,12 +244,12 @@
     $('#modals').append(modalObj);
     $('#postList').append(listItemObj);
     client.onreadystatechange = (function(client, id) { return function() {
-      
       if (client.readyState === 4 && client.status === 200) {
         console.log(id);
         var converter = new showdown.Converter();
         html = converter.makeHtml(client.responseText);
         $(id).html(html);
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       }
     };}(client, `#${posts[i].id}Content`));
     client.send();
