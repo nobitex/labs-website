@@ -194,6 +194,7 @@
   });
 
   let posts = [
+    {id: 'study', date: "26 Aug 2023", title: "Wanna become a crypto researcher?", desc: "Your journey to becoming a blockchain expert!", markdown: 'content/study.md'},
     {id: 'ppob', date: "16 Aug 2023", title: "EIP-7503 by Nobitex Labs", desc: "Private Proof of Burn as a privacy extension for Ethereum", markdown: 'content/ppob.md'},
     {id: 'stealth', date: "25 Jul 2023", title: "Stealth Addresses", desc: "Understanding Stealth Addresses and how they can be implemented on Ethereum", markdown: 'content/stealth.md'},
     {id: 'kzg', date: "19 Jul 2023", title: "KZG Polynomial Commitments", desc: "A write-up on how pairing-based polynomial commitments work", markdown: 'content/kzg.md'}
@@ -261,6 +262,14 @@
     em::before, em::after, strong::before, strong::after {
       content: none;
     }
+    .modal-dialog a {
+      color: black;
+      text-decoration: underline;
+    }
+    .modal-dialog a:hover {
+      color: white;
+    }
+    
     .modal-dialog h1 {
       background-color: transparent;
       font-size: 1.4em;
