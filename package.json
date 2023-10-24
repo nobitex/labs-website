@@ -2,7 +2,7 @@
   "name": "text-md-genrator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nobitex.github.io/labs-website",
+  "homepage": "https://labs.nobitex.ir/",
   "dependencies": {
     "98.css": "^0.1.20",
     "@testing-library/jest-dom": "^5.17.0",
