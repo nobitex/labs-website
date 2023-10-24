@@ -1,3 +1,11 @@
+---
+title: journey
+description: Your journey to becoming a blockchain expert!
+category: ["General Cryptography"]
+date : 24 Oct 2023
+---
+
+
 # Your journey to becoming a blockchain expert!
 
 Got zero knowledge of blockchains and the underlying technology? Use this reading list to get an extensive knowledge of blockchain-related math and cryptography!

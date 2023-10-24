@@ -1,3 +1,12 @@
+---
+title: KZG Polynomial Commitments
+description: While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.
+category: ["General Cryptography", "Zero-Knowledge Proofs"]
+date : 24 Oct 2023
+---
+
+
+
 # KZG Polynomial Commitments
 
 Imagine we want to commit to a vector of secret values, and later we want to make proofs that certain values exist in that list, without revealing the entire list.

@@ -1,0 +1,62 @@
+{
+  "name": "text-md-genrator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "98.css": "^0.1.20",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "dom": "^0.0.3",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "hast-util-to-html": "^9.0.0",
+    "markdown": "^0.5.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-to-jsx": "^7.3.2",
+    "marked": "^9.1.2",
+    "mdast-util-to-hast": "^13.0.2",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dom-server": "^0.0.5",
+    "react-markdown": "^9.0.0",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "rehype-stringify": "^10.0.0",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "router": "^1.3.8",
+    "unified": "^11.0.3",
+    "web-vitals": "^2.1.4",
+    "yaml-front-matter": "^4.1.1"
+  },
+  "scripts": {
+    "start": "node src/script/Script.js & react-scripts start",
+    "json": "node src/script/Script.js",
+    "build": "node src/script/Script.js & react-scripts build",
+    "dev": "node src/script/Script.js & react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

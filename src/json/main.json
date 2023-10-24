@@ -1,0 +1,39 @@
+[
+  {
+    "title": "journey",
+    "description": "Your journey to becoming a blockchain expert!",
+    "category": [
+      "General Cryptography"
+    ],
+    "date": "24 Oct 2023",
+    "fileName": "1-study"
+  },
+  {
+    "title": "KZG Polynomial Commitments",
+    "description": "While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.",
+    "category": [
+      "General Cryptography",
+      "Zero-Knowledge Proofs"
+    ],
+    "date": "24 Oct 2023",
+    "fileName": "2-kzg"
+  },
+  {
+    "title": "Private Proof of Burn",
+    "description": "While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.",
+    "category": [
+      "General Cryptography"
+    ],
+    "date": "24 Oct 2023",
+    "fileName": "3-ppob"
+  },
+  {
+    "title": "Stealth Addresses",
+    "description": "Stealth Addresses are a privacy technique primarily used in Monero Cryptocurrency.",
+    "category": [
+      "General Cryptography"
+    ],
+    "date": "23 Oct 2023",
+    "fileName": "4-stealth"
+  }
+]

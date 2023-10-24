@@ -1,3 +1,12 @@
+---
+title: Private Proof of Burn
+description: While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.
+category: ["General Cryptography"]
+date : 24 Oct 2023
+---
+
+
+
 # Private Proof of Burn
 
 While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset (E.g ETH) by sending it to an unspendable address, and later build a ZK proof showing that some amount of tokens has been burnt in a transaction in an older block, without revealing the transaction. Why is it important? People can do plain EOA-to-EOA transfers which privately have impact in some other verifier smart-contract on the system.
