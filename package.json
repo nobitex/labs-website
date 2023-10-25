@@ -1,7 +1,6 @@
 {
   "name": "text-md-genrator",
   "version": "0.1.0",
-  "homepage": "https://nobitex.github.io/labs-website",
   "private": true,
   "dependencies": {
     "98.css": "^0.1.20",
