@@ -3,7 +3,7 @@ import LabsText from "../Components/LabsText";
 import RecentPosts from "../Components/RecentPosts";
 import Categories from "../Components/Categories";
 import Modal from "../Components/Modal";
-
+import logo from "../pics/logo512.png";
 const Home = () => {
   return (
     <Layout>
@@ -47,7 +47,8 @@ const Home = () => {
                       className="underline my-2 hover:bg-black hover:text-white"
                       href="https://discord.gg/XuBps588Xp"
                     >
-                     {" "} Discord server
+                      {" "}
+                      Discord server
                     </a>
                     !
                   </p>
@@ -169,6 +170,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <img src={logo} />
     </Layout>
   );
 };
