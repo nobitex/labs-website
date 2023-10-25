@@ -37,7 +37,8 @@
     "start": "node src/script/Script.js & react-scripts start",
     "json": "node src/script/Script.js",
     "build": "node src/script/Script.js & react-scripts build",
-    "dev": "node src/script/Script.js & react-scripts start"
+    "dev": "node src/script/Script.js & react-scripts start",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
