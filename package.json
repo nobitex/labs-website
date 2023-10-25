@@ -9,10 +9,12 @@
     "@testing-library/user-event": "^13.5.0",
     "dom": "^0.0.3",
     "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
     "gh-pages": "^6.0.0",
     "gray-matter": "^4.0.3",
     "hast-util-to-html": "^9.0.0",
     "markdown": "^0.5.0",
+    "markdown-it": "^13.0.2",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-to-jsx": "^7.3.2",
     "marked": "^9.1.2",
@@ -34,11 +36,14 @@
     "yaml-front-matter": "^4.1.1"
   },
   "scripts": {
-    "start": "node src/script/Script.js & react-scripts start",
     "json": "node src/script/Script.js",
-    "build": "node src/script/Script.js & react-scripts build",
-    "dev": "node src/script/Script.js & react-scripts start",
-    "deploy": "gh-pages -d build"
+    "dev":"node src/script/Script.js & node src/script/HtmlGenerator.js",
+    "html": "node src/script/HtmlGenerator.js",
+    "deploy": "gh-pages -d build",
+    "start": "node src/script/Script.js &  react-app-rewired start",
+    "build": "node src/script/Script.js & react-app-rewired build",
+    "test": " node src/script/Script.js & react-app-rewired test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +64,8 @@
     ]
   },
   "devDependencies": {
+    "html-loader": "^4.2.0",
+    "react-app-rewired": "^2.2.1",
     "tailwindcss": "^3.3.3"
   }
 }

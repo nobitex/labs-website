@@ -17,8 +17,6 @@ body {
   text-rendering: geometricPrecision;
 }
 .test__Shadow {
-  /* box-shadow: -3.5px -7px 0 0 #bbbbbb, 2.5px 6.125px 0 0 #bbbbbb,
-    -3.5px 6.125px 0 0 #bbbbbb, 2.5px -7px 0 0 #bbbbbb; */
   filter: drop-shadow(7px 8px 0 black);
   margin-top: 23px;
   margin-bottom: 7px;
@@ -43,15 +41,15 @@ body {
   min-height: 100vh;
   margin-top: 10px;
 }
+.post h2:first-of-type{
+  display: none;}
 
 .post h1 {
   background-color: transparent;
   font-size: 1.875rem !important;
   text-align: center;
-  /* margin: 1em; */
   font-weight: bold;
   background-color: #00aaaa;
-  /* margin: 1em -190px; */
   padding: 15px;
 }
 
@@ -78,6 +76,15 @@ body {
   color: #000084;
   font-weight: bold;
 }
+.post h2{
+  text-align: center;
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: #aa00aa;
+  font-size: 24px;
+  color: #fff;
+  font-size: bold;
+}
 
 .blink {
   animation: blinkingText 1.2s infinite;
@@ -99,9 +106,7 @@ body {
     opacity: 1;
   }
 }
-/* .labs_text{
-  overflow: hidden; white-space-collapse: discard; white-space: pre-wrap;
-  } */
+
 
   @keyframes moveRightLeft {
     0% {
