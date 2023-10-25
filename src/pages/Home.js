@@ -3,8 +3,20 @@ import LabsText from "../Components/LabsText";
 import RecentPosts from "../Components/RecentPosts";
 import Categories from "../Components/Categories";
 import Modal from "../Components/Modal";
-import logo from "../pics/logo512.png";
+import Markdown from "markdown-to-jsx";
+import { useState,useEffect } from "react";
 const Home = () => {
+  const [md , setMd] = useState('')
+
+    useEffect(() => {
+    import(`../markdown/1-study.md`).then((module) =>
+      fetch(module.default)
+        .then((res) => res.text())
+        .then((md) => {
+          setMd(md);
+        })
+    );
+  }, []);
   return (
     <Layout>
       <div>
@@ -168,9 +180,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+      
+        </div>    <Markdown>{md}</Markdown>
       </div>
-      <img src={logo} />
     </Layout>
   );
 };
