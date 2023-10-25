@@ -170,7 +170,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img src={logo} />
     </Layout>
   );
 };
