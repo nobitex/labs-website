@@ -10,7 +10,7 @@ const Home = () => {
         <div className="my-12">
           <LabsText />
           <h1 className="text-6xl font-bold text-center lg:hidden">
-            Nobitext Labs
+            Nobitex Labs
           </h1>
         </div>
         <div className="flex justify-center ">
