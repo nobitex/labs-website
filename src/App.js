@@ -1,12 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { HashRouter as Router, Routes, Route} from "react-router-dom";
 import MarkdownParser from "./Components/MarkdownParser";
 import Home from "./pages/Home";
 import AllPosts from "./pages/AllPosts";
 import Category from "./pages/category";
 
 const App = () => {
-
   const markdownFiles = require.context("./markdown", true, /\.md$/);
   const postIds = markdownFiles
     .keys()
@@ -14,14 +13,14 @@ const App = () => {
 
   return (
     <>
-      <Router>
+      <Router basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
           {postIds.map((id) => (
             <Route
               key={id}
-              path={`/posts/:id`}
-              element={<MarkdownParser path={`/markdown/markdown${id}.md`} />}
+              path={`posts/:id`}
+              element={<MarkdownParser path={`markdown/markdown${id}.md`} />}
             />
           ))}
           <Route path="/posts" element={<AllPosts />} />
