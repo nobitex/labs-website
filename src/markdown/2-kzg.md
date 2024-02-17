@@ -1,6 +1,6 @@
 ---
 title: KZG Polynomial Commitments
-description: While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.
+description: Polynomical commitments are alternatives to merkle trees.
 category: ["General Cryptography", "Zero-Knowledge Proofs"]
 date : 24 Oct 2023
 ---

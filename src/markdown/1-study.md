@@ -1,5 +1,5 @@
 ---
-title: journey
+title: Crypto 101
 description: Your journey to becoming a blockchain expert!
 category: ["General Cryptography"]
 date : 24 Oct 2023

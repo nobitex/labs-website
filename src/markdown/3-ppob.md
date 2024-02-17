@@ -1,6 +1,6 @@
 ---
 title: Private Proof of Burn
-description: While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.
+description: PPoB allows a contract to know some amount of ETH has been burnt without exposing who did it.
 category: ["General Cryptography"]
 date : 24 Oct 2023
 ---

@@ -1,6 +1,6 @@
 [
   {
-    "title": "journey",
+    "title": "Crypto 101",
     "description": "Your journey to becoming a blockchain expert!",
     "category": [
       "General Cryptography"
@@ -10,7 +10,7 @@
   },
   {
     "title": "KZG Polynomial Commitments",
-    "description": "While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.",
+    "description": "Polynomical commitments are alternatives to merkle trees.",
     "category": [
       "General Cryptography",
       "Zero-Knowledge Proofs"
@@ -20,7 +20,7 @@
   },
   {
     "title": "Private Proof of Burn",
-    "description": "While researching on privacy solutions and applications of ZKP, we discovered a technique, by which people can burn their digital asset.",
+    "description": "PPoB allows a contract to know some amount of ETH has been burnt without exposing who did it.",
     "category": [
       "General Cryptography"
     ],
