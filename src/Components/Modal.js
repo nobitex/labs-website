@@ -13,7 +13,7 @@ const Modal = () => {
         onClick={toggleModal}
         className="mx-auto border border-black py-3 hover:border-white bg-[#bbbbbb]   hover:bg-[#555555]  hover:text-white test__Shadow"
       >
-        <span className="py-2.5 mx-2 ">i want to join!</span>
+        <span className="py-2.5 mx-2 ">I want to join!</span>
       </button>
 
       {isOpen && (

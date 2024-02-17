@@ -71,16 +71,6 @@ const Home = () => {
                     </a>
                     !
                   </p>
-                  <p className="my-3">
-                    Participate in our{" "}
-                    <a
-                      className="underline my-5 hover:bg-black hover:text-white"
-                      href="https://nobitex.ir/defi-hackathon"
-                    >
-                      DeFi Hackathon
-                    </a>
-                    !
-                  </p>
                 </div>
               </div>
             </div>

@@ -26,7 +26,7 @@ const Categories = () => {
         <ul className="p-5">
           <Link to={"./categories"}>
             <li className="py-3 flex justify-between">
-              <span> all Works </span> <span>({data.length})</span>{" "}
+              <span> All Posts </span> <span>({data.length})</span>{" "}
             </li>
           </Link>
           {Object.keys(useCategories).map((c) => {

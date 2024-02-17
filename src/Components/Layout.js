@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
             Nobitex Labs
           </div>
           <div onClick={()=>{navigate('/posts')}} className="underline ml-2 inline-block text-black hover:bg-black hover:text-white" To="/">
-            All Works
+            All Posts
           </div>
         </div>
       </div>

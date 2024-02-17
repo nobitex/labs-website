@@ -9,7 +9,7 @@ const Category = () => {
     <Layout>
       <div>
         <h1 className="text-3xl text-center my-5 bg-[#00aaaa] text-black  ">
-          {!categoryName ? "all Works" : categoryName}
+          {!categoryName ? "All posts" : categoryName}
         </h1>
         {data.map(({title,description,date,fileName,category}, id) => {
           // If categoryName is not defined, render all links

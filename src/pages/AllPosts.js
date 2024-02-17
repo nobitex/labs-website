@@ -7,7 +7,7 @@ const AllPosts = () => {
   return (
     <Layout>
       <h1 className="text-3xl text-center my-5 bg-[#00aaaa] text-black  ">
-        All Works
+        All Posts
       </h1>
       {data.map(({title,date,description,fileName}, id) => {
         return (
