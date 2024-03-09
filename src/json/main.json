@@ -1,6 +1,6 @@
 [
   {
-    "title": "Crypto 101",
+    "title": "👩‍🏫 Crypto 101",
     "description": "Your journey to becoming a blockchain expert!",
     "category": [
       "General Cryptography"
@@ -9,7 +9,7 @@
     "fileName": "1-study"
   },
   {
-    "title": "KZG Polynomial Commitments",
+    "title": "🖃 KZG Polynomial Commitments",
     "description": "Polynomical commitments are alternatives to merkle trees.",
     "category": [
       "General Cryptography",
@@ -19,7 +19,7 @@
     "fileName": "2-kzg"
   },
   {
-    "title": "Private Proof of Burn",
+    "title": "🔥 Private Proof of Burn",
     "description": "PPoB allows a contract to know some amount of ETH has been burnt without exposing who did it.",
     "category": [
       "General Cryptography"
@@ -28,12 +28,21 @@
     "fileName": "3-ppob"
   },
   {
-    "title": "Stealth Addresses",
+    "title": "🎭 Stealth Addresses",
     "description": "Stealth Addresses are a privacy technique primarily used in Monero Cryptocurrency.",
     "category": [
       "General Cryptography"
     ],
     "date": "23 Oct 2023",
     "fileName": "4-stealth"
+  },
+  {
+    "title": "🔥 Burnth / 🪱 WormCash",
+    "description": "A practical implementation of EIP-7503",
+    "category": [
+      "Zero-Knowledge Proofs"
+    ],
+    "date": "9 Mar 2024",
+    "fileName": "5-burnth"
   }
 ]

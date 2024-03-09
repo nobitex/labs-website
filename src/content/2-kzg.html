@@ -1,9 +1,9 @@
 <hr>
-<h2>title: KZG Polynomial Commitments
+<h2>title: 🖃 KZG Polynomial Commitments
 description: Polynomical commitments are alternatives to merkle trees.
 category: [&quot;General Cryptography&quot;, &quot;Zero-Knowledge Proofs&quot;]
 date : 24 Oct 2023</h2>
-<h1>KZG Polynomial Commitments</h1>
+<h1>🖃 KZG Polynomial Commitments</h1>
 <p>Imagine we want to commit to a vector of secret values, and later we want to make proofs that certain values exist in that list, without revealing the entire list.</p>
 <p>Most naive implementation of such a tool is a merkle tree. With a merkle tree you can commit to <code>2^n</code> values and make proofs of size <code>log(2^n)=n</code>. (Proof size: <code>O(log(n))</code>)</p>
 <p>A KZG commitment is a cryptographic tool which can generate proofs for a list of values with <code>O(1)</code> proof sizes.</p>

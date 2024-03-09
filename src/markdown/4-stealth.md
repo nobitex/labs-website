@@ -1,5 +1,5 @@
 ---
-title: Stealth Addresses
+title: 🎭 Stealth Addresses
 description: Stealth Addresses are a privacy technique primarily used in Monero Cryptocurrency.
 category: ["General Cryptography"]
 date : 23 Oct 2023
@@ -7,7 +7,7 @@ date : 23 Oct 2023
 
 
 
-# Stealth Addresses
+# 🎭 Stealth Addresses
 
 Stealth Addresses are a privacy technique primarily used in Monero Cryptocurrency.
 
