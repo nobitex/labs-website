@@ -1,5 +1,5 @@
 ---
-title: KZG Polynomial Commitments
+title: 🖃 KZG Polynomial Commitments
 description: Polynomical commitments are alternatives to merkle trees.
 category: ["General Cryptography", "Zero-Knowledge Proofs"]
 date : 24 Oct 2023
@@ -7,7 +7,7 @@ date : 24 Oct 2023
 
 
 
-# KZG Polynomial Commitments
+# 🖃 KZG Polynomial Commitments
 
 Imagine we want to commit to a vector of secret values, and later we want to make proofs that certain values exist in that list, without revealing the entire list.
 
