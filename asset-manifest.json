@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/static/css/main.e9a5b9d4.css",
-    "main.js": "/static/js/main.ec2cdfc7.js",
+    "main.js": "/static/js/main.82081016.js",
     "static/js/590.1b480cdc.chunk.js": "/static/js/590.1b480cdc.chunk.js",
     "static/js/473.40f2828d.chunk.js": "/static/js/473.40f2828d.chunk.js",
     "static/js/582.18ddacd4.chunk.js": "/static/js/582.18ddacd4.chunk.js",
     "static/js/620.527321a4.chunk.js": "/static/js/620.527321a4.chunk.js",
-    "static/js/266.fc675076.chunk.js": "/static/js/266.fc675076.chunk.js",
+    "static/js/266.66bf026a.chunk.js": "/static/js/266.66bf026a.chunk.js",
     "static/js/787.089ea9af.chunk.js": "/static/js/787.089ea9af.chunk.js",
     "static/media/1-study.md": "/static/media/1-study.1ddae74274702ee433e6.md",
-    "static/media/5-burnth.md": "/static/media/5-burnth.5d25fa30defbfedda01d.md",
+    "static/media/5-burnth.md": "/static/media/5-burnth.0b0c9ab6334afecda68a.md",
     "static/media/3-ppob.md": "/static/media/3-ppob.43a63785596459309b07.md",
     "static/media/2-kzg.md": "/static/media/2-kzg.ef8625dfb0bab6056cfb.md",
     "static/media/4-stealth.md": "/static/media/4-stealth.1d2269359136ca8c200c.md",
     "index.html": "/index.html",
     "main.e9a5b9d4.css.map": "/static/css/main.e9a5b9d4.css.map",
-    "main.ec2cdfc7.js.map": "/static/js/main.ec2cdfc7.js.map",
+    "main.82081016.js.map": "/static/js/main.82081016.js.map",
     "590.1b480cdc.chunk.js.map": "/static/js/590.1b480cdc.chunk.js.map",
     "473.40f2828d.chunk.js.map": "/static/js/473.40f2828d.chunk.js.map",
     "582.18ddacd4.chunk.js.map": "/static/js/582.18ddacd4.chunk.js.map",
     "620.527321a4.chunk.js.map": "/static/js/620.527321a4.chunk.js.map",
-    "266.fc675076.chunk.js.map": "/static/js/266.fc675076.chunk.js.map",
+    "266.66bf026a.chunk.js.map": "/static/js/266.66bf026a.chunk.js.map",
     "787.089ea9af.chunk.js.map": "/static/js/787.089ea9af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9a5b9d4.css",
-    "static/js/main.ec2cdfc7.js"
+    "static/js/main.82081016.js"
   ]
 }
