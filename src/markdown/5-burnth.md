@@ -33,4 +33,5 @@ Our Modified-Merkle-Patricia-Trie-Proof-Verifier consists of 3 R1CS circuits, as
 
 There is also an extra Spend circuit, allowing you to partially mint your burnt amounts, ***without exposing the remaining amounts!***
 
-***The parameter files are approximately 500MB and it takes around 1 minute to generate a single proof of burn.***
+- ***The parameter files are approximately 500MB and it takes around 1 minute to generate a single proof of burn.***
+- ***The source code for the Burnth project is available on [GitHub](https://github.com/nobitex/burnth).***
