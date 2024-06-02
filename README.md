@@ -17,14 +17,14 @@ To add a new document to the project, follow these steps:
    - This block is crucial for the project to function correctly.
    - Below is an example of the required YAML format:
 
-\```yaml
----
-title: Your Title Here
-description: A brief description of the document.
-category: ["Your Category Here"]
-date: YYYY-MM-DD
----
-\```
+    ```yaml
+    ---
+    title: Your Title Here
+    description: A brief description of the document.
+    category: ["Your Category Here"]
+    date: YYYY-MM-DD
+    ---
+    ```
 
 3. **🚨 Warnings**:
    - If the markdown file does not include the YAML front matter, the project will not work correctly.
