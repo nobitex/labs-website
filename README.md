@@ -1,70 +1,52 @@
+## 📄 Adding a New Document
 
-### `add new document`
-if you want to add new document you should put it in this directory
+To add a new document to the project, follow these steps:
 
-├── src
-│   ├── markdown
+1. 📁 Navigate to the `src` directory.
+2. ➡️ Place your markdown file in the `markdown` folder.
 
-*warning*  when you add your mark down file  should put number before it like this 1-markdown.md
+### 📋 Important Guidelines
 
-*warning*  added number should be grater than last number in folder for example if we have 3-markdown.md you should add 4-markdown.md 
+1. **📝 Filename Convention**:
+   - Each markdown file should have a number prefix.
+   - The number should be greater than the last number in the folder.
+   - For example, if the latest file is `3-markdown.md`, the new file should be named `4-markdown.md`.
 
-*warning*  all of markdown files should contain a yaml like this:
+2. **⚠️ YAML Front Matter**:
+   - Every markdown file must include a YAML front matter block.
+   - This block is crucial for the project to function correctly.
+   - Below is an example of the required YAML format:
+
+\```yaml
 ---
-title: changed
-description: This is a description of my blog post.
-category: ["Zero-Knowledge Proofs"]
-date: 26 Aug 2023
+title: Your Title Here
+description: A brief description of the document.
+category: ["Your Category Here"]
+date: YYYY-MM-DD
 ---
-and if file doesn't contain it project wont work correctly 
+\```
 
+3. **🚨 Warnings**:
+   - If the markdown file does not include the YAML front matter, the project will not work correctly.
+   - Ensure the added number in the filename is greater than the last existing number to maintain order.
 
-### `start`
+## 🚀 Deploying Your Changes
 
-first Convert data of files in src/markdown to a json file
-then Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After adding your markdown file to the `src` directory, follow these steps to build and deploy the project:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **🏗️ Build the Project**:
+   - Run the command: `yarn run build`
+   - This command performs the following tasks:
+     - Generates a JSON file with the addresses of the new markdown files (updating it for new files).
+     - Generates HTML files from the markdown files.
+     - Builds the project with the new updates.
 
-### ` run build`
+2. **🌐 Deploy to GitHub Pages**:
+   - Run the command: `yarn deploy`
+   - This command deploys the project to the `gh-pages` branch, updating the site.
 
-first Convert data of files in src/markdown to a json file
-then Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **🔄 Final Steps**:
+   - After deployment, run: `yarn start`
+   - Push changes to the main branch to keep it updated: `git push`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By following these steps, your project will be updated and deployed correctly.
